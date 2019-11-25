@@ -1,0 +1,86 @@
+<html>
+<head>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/wallp.css" rel="stylesheet"> 
+<body>
+
+    <div class="navbar">
+        <a href="pocetna_strana.html">Početna stranica</a>
+        <a href="tim.html">Tim</a>
+        <a href="kontakt.html">Kontakti</a>
+        <div class="dropdown">
+          <button class="dropbtn"> Partneri <a href="partneri.html"></a>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="https://www.intel.com/content/www/us/en/homepage.html">Intel</a>
+            <a href="https://www.amd.com/en/ryzen">Ryzen</a>
+            <a href="https://www.microsoft.com/sr-latn-rs/">Microsoft</a>
+            <a href="https://www.dropbox.com/">Dropbox</a>
+            <a href="http://www.fon.bg.ac.rs/">FON</a>
+          </div>
+        </div>
+      </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Vrh</button>
+
+
+  
+    
+
+    <h1><font color="black">MVK Group</font><h1>
+<a id="bottom"></a>
+         <article class="container 90%">
+            <p>MVK Group je nastala na temeljima potrebe širenja svesti za digitalnom transformacijom prvirede u Srbiji. Doprinosimo razvijanju i implementaciji poslovnog informativnog sistema za sve privredne subjekte kako bi promovisali svest o potrebi da se celokupan poslovni proces modeluje kroz informacioni sistem. U vreme intezivnih promena na tržištu gradimo status jednog od najpouzdanijih partnera i epitet moderne, inovativne kompanije koja nudi proizvod najvišeg kvaliteta u oblasti poslovnih informacionih sistema koji doprinosi većem kvalitetu u poslovanju.</p>
+             <head>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+    <!--- MAPA --->
+  <body>
+    <h3>Gde se nalazi nasa kancelarija?</h3>
+<article id="contact" class="container 75%">
+      <head>
+         <style>
+            #map {
+            height: 779px;
+            width: 100%;
+            }
+         </style>
+      </head>
+      <body>
+         <div id="map"></div>
+		 <!--- SKRIPTA KOJA UBACUJE MAPU SA TACNOM LOKACIJOM --->
+         <script>
+            function initMap() {
+              var uluru = { lat: 44.850763, lng: 20.4888363 };
+              var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+              });
+            }
+         </script>
+         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6pOgxDHevsYnu6ZLe-mDjbUBPwDQPiK8&callback=initMap"></script>
+		 
+		 <body> 
+    <h4>Možete da nas pratite i na društvenim mrežama:</h4>
+    <ul class="social">
+         <li><a href="https://twitter.com/?lang=en" class=""><span class="label">Twitter</span></a></li>
+         <li><a href="https://www.instagram.com" class=""><span class="label">Instagram</span></a></li>
+         <li><a href="https://dribbble.com/" class=""><span class="label">Dribbble</span></a></li>
+         <li><a href="https://www.linkedin.com/uas/login" class=""><span class="label">LinkedIn</span></a></li>
+         <li><a href="https://plus.google.com/discover" class=""><span class="label">Google+</span></a></li>
+      </ul>    
+</body>
+		 <script src="script/bektutop.js"></script>
+		 
+</body>
+</html>

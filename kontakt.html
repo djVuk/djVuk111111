@@ -1,0 +1,137 @@
+<html>
+<head>
+<link href="css/kontakt.css" rel="stylesheet">
+<link href="css/wallp.css" rel="stylesheet">
+<body>
+
+        <div class="navbar">
+                <a href="pocetna_strana.html">Početna stranica</a>
+                <a href="tim.html">Tim</a>
+                <a href="kontakt.html">Kontakti</a>
+                <div class="dropdown">
+                  <button class="dropbtn"> Partneri <a href="partneri.html"></a>
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="https://www.intel.com/content/www/us/en/homepage.html">Intel</a>
+                    <a href="https://www.amd.com/en/ryzen">Ryzen</a>
+                    <a href="https://www.microsoft.com/sr-latn-rs/">Microsoft</a>
+                    <a href="https://www.dropbox.com/">Dropbox</a>
+                    <a href="http://www.fon.bg.ac.rs/">FON</a>
+                  </div>
+                </div>
+              </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Vrh</button>
+
+
+<form action="/action_page.php">
+<h1>Naša kontakt stranica</h1>
+    <h2>ŽELITE POSAO?</h2>
+            <p>Da li mislite da imate ono što je potrebno da bi se zaposlili kod nas? Popunite kratku formu ispod. Odgovor očekujte u roku od 24 časa, u njoj će biti sve detaljno opisano šta i kako treba uraditi.
+</p>
+            Ime:     <input type="text" name="ime" maxlength="15"><br>
+            Prezime: <input type = "text" name="prezime" maxlength="15"> <BR>
+Koliko godina imate: <input type="number" min="1" max="100" value="1">
+	
+    <div class="form-group">
+                           <label class="col-md-4 control-label">E-Mail:</label>
+                           <div class="col-md-4 inputGroupContainer">
+                              <div class="input-group">
+                                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                 <input name="email" placeholder="E-Mail Adresa" class="form-control" type="text">
+                              </div>
+                           </div>
+                        </div>
+    
+    
+    <div class="form-group">
+                           <label class="col-md-4 control-label">Grad</label>
+                           <div class="col-md-4 selectContainer">
+                              <div class="input-group">
+                                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                                 <select name="state" class="form-control selectpicker">
+                                    <option value=" " ></option>
+                                    <option>Beograd</option>
+                                    <option>Niš</option>
+                                    <option >Novi Sad</option>
+                                    <option >Loznica</option>
+                                    <option >Pirot</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+    
+Opišite sebe u par rečenica: <br>
+<textarea rows = "6" cols = "60" name = "Upisite vasu poruku ovamo">
+</textarea>
+<br><br>
+Da li želite da primate obaveštenja o našim novim proizvodima?:
+<input type = "radio" name = "subject" value = "yes"> Da
+<input type = "radio" name = "subject" value = "no">Ne
+</form>
+    
+    <br>	
+Vaš broj telefona: 
+<input type="text" id="txtFld" onkeyup="isValidChar(this.value);" />
+<script>
+ function isValidChar(char){
+
+        var txt = char;
+        var found = false;
+        var validChars = "+0123456789";
+
+        for(j=0;j<txt.length;j++){ 
+            var c = txt.charAt(j);
+            found = false;
+            for(x=0;x<validChars.length;x++){
+                if(c==validChars.charAt(x)){
+                    found=true;
+                    break;
+                }
+            }
+            if(!found){
+			document.getElementById('txtFld').value = char.substring(0, char.length -1);
+                break;             
+				
+            }
+        }
+    }
+</script>
+    <br>
+    <br>
+<div></div>
+
+<body style="text-align:center">
+
+
+<div class="popup" onclick="myFunction()">Pošaljite vaše informacije!
+  <span class="popuptext" id="myPopup">Hvala vam!</span>
+</div>
+
+<script>
+
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+
+</body>
+<br>
+
+
+		 <body> 
+    <h2>Možete da nas pratite i na društvenim mrežama:</h2>
+    <ul class="social">
+         <li><a href="https://twitter.com/?lang=en" class=""><span class="label">Twitter</span></a></li>
+         <li><a href="https://www.instagram.com" class=""><span class="label">Instagram</span></a></li>
+         <li><a href="https://dribbble.com/" class=""><span class="label">Dribbble</span></a></li>
+         <li><a href="https://www.linkedin.com/uas/login" class=""><span class="label">LinkedIn</span></a></li>
+         <li><a href="https://plus.google.com/discover" class=""><span class="label">Google+</span></a></li>
+        </ul> 
+</body>
+         <script src="script/bektutop.js"></script>
+
+</body>
+</html>
